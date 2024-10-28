@@ -1,0 +1,105 @@
+*{
+  box-sizing: border-box;
+}
+.header {
+  text-align: center;
+  padding: 10px;
+}
+
+body {
+  font-family: arial;
+  margin: 0px;
+  background-color: rgb(180, 153, 206);
+}
+
+.div1 {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(44, 44, 83);
+  float: left;
+  overflow: hidden;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+  float: left;
+  color: white;
+  padding-top: 15px;
+}
+
+.div1 a {
+  text-decoration: none;
+  color: white;
+  float: left;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  text-align: center;
+  padding: 14px 16px;
+
+
+}
+
+a:hover {
+  background-color: bisque;
+  height: 50px;
+  width: 50px;
+}
+
+.leftcolumn {
+  float: left;
+  width: 75%;
+  
+}
+
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding: 20px;
+  padding-left: 10px;
+ 
+}
+
+
+.fakeimg {
+  background-color: #aaa;
+  width: 90%;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: rgb(192, 176, 176);
+  height: 80px;
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+
+
+@media screen and (max-width: 400px) {
+  .div1 a {
+    float: none;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
